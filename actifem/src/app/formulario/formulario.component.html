@@ -13,7 +13,7 @@
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Lugar del suceso:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Chapultepec, Colonia Roma Norte, Ciudad de México, México" [(ngModel)]="data.place">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Chapultepec, Colonia Roma Norte, Ciudad de México, México" [(ngModel)]="data.place" (keyup)="getGeocode()">
         <small id="emailHelp" class="form-text text-muted">Dirección lo más completa</small>
       </div>
       <div class="form-group">
