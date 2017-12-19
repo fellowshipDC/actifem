@@ -1,41 +1,41 @@
 <div class="container-fluid formulario">
   <div class="row d-flex justify-content-center">
     <div class="col-10 title mt-5">
-      Haz tu denuncia. Ayúdanos a hacer un sistema de mapeo de violencia.
+      <p class="text-center">Haz tu denuncia. Ayúdanos a hacer un sistema de mapeo de violencia.</p>
     </div>
   </div>
   <div class="row d-flex justify-content-center">
     <div class="col-6 my-5 py-3 form">
       <div class="form-group">
         <label for="exampleInputEmail1">Fecha de la denuncia:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="11/12/2017">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="11/12/2017" [(ngModel)]="data.date">
         <small id="emailHelp" class="form-text text-muted">Formato DD/MM/AAAA</small>
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Lugar del suceso:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Chapultepec, Colonia Roma Norte, Ciudad de México, México">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Chapultepec, Colonia Roma Norte, Ciudad de México, México" [(ngModel)]="data.place">
         <small id="emailHelp" class="form-text text-muted">Dirección lo más completa</small>
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Edad de la víctima:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="31">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="31" [(ngModel)]="data.age">
         <small id="emailHelp" class="form-text text-muted">Formato XX</small>
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Descripción del suceso:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Golpes y robo de objetos personales">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Golpes y robo de objetos personales" [(ngModel)]="data.detail">
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Fuente:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="http://www.eluniversal.com.mx/metropoli/cdmx/presenta-denuncia-mujer-que-fue-golpeada-durante-mitin-en-coyoacan">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="http://www.eluniversal.com.mx/metropoli/cdmx/presenta-denuncia-mujer-que-fue-golpeada-durante-mitin-en-coyoacan" [(ngModel)]="data.source">
         <small id="emailHelp" class="form-text text-muted">Link de la denuncia</small>
       </div>
       <div class="form-group">
         <label for="exampleInputEmail1">Tipo de violencia:</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Golpes">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Golpes" [(ngModel)]="data.type">
         <small id="emailHelp" class="form-text text-muted">¿Qué tipo de violencia recibiste?</small>
       </div>
-      <button type="button" class="btn btn-primary mt-3">Denunciar</button>
+      <button type="button" class="btn btn-primary mt-3" (click)="submit()">Denunciar</button>
     </div>
   </div>
 </div>

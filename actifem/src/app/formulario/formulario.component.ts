@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import * as $ from 'jquery';
 
 @Component({
@@ -8,7 +9,31 @@ import * as $ from 'jquery';
 })
 export class FormularioComponent implements OnInit {
 
-  constructor() { }
+  url = 'http://localhost:3000/denuncias';
+
+  data = {
+    date: '',
+    place: '',
+    age: '',
+    detail: '',
+    source: '',
+    type: ''
+  };
+
+  constructor(private http: HttpClient) { }
+
+  submit() {
+    this.http
+    .post(this.url, this.data)
+    .subscribe(
+      res => {
+        console.log(res);
+      },
+      err => {
+        console.log('error');
+      }
+    );
+  }
 
   ngOnInit() {
 
