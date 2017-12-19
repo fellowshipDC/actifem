@@ -1,6 +1,7 @@
-.promise {
+.denuncia {
     background-color: #EFEFEF;
     font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
     .header {
       color: #474747;
       .title {
@@ -10,11 +11,17 @@
         word-wrap: break-word;
         min-height: 140px;
       }
+      .age {
+        font-size: 15px;
+        line-height: 20px;
+        word-break: break-all;
+        word-wrap: break-word;
+      }
       .resource {
         font-size: 15px;
       }
     }
-    .author {
+    .date {
       background-color: #00CC99;
       height: 50px;
       .name {
@@ -23,4 +30,3 @@
       }
     }
   }
-  

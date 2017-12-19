@@ -7,24 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DenunciaComponent implements OnInit {
 
-  @Input()
-  no: string;
-  @Input()
-  promise: string;
-  @Input()
-  author: string;
-  @Input()
-  position: string;
-  @Input()
-  government: string;
-  @Input()
-  ispublic: string;
-  @Input()
-  isprivate: string;
-  @Input()
-  civil: string;
-  @Input()
-  resource: string;
+  @Input() data;
 
   constructor() { }
 

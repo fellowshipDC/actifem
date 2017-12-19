@@ -1,17 +1,20 @@
-<div class="container-fluid promise">
+<div class="container-fluid denuncia">
   <div class="row header py-4 px-3">
     <div class="col-12 title text-left font-weight-bold">
-      <p class="mb-3">{{promise}}</p>
+      <p class="mb-3">{{data.detail}}</p>
     </div>
+    <div class="col-12 age text-left font-weight-bold">
+        <p class="mb-3">{{data.age}} años</p>
+      </div>
     <div class="col-12 resource text-left font-weight-bold">
-      <a href="{{resource}}" target="_blank">
+      <a href="{{data.source}}" target="_blank">
         <p class="m-0">Recurso</p>
       </a>
     </div>
   </div>
-  <div class="row author px-3">
+  <div class="row date px-3">
     <div class="col-12 name font-weight-bold d-flex justify-content-end align-items-center">
-      <p class="m-0">{{author}}</p>
+      <p class="m-0">{{data.date}}</p>
     </div>
   </div>
 </div>
